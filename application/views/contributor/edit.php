@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Username</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="username" autocomplete="off">
+                            <input type="text" class="form-control" name="username" autocomplete="off" value="<?= $edit->username ?>">
                         </div>
                     </div>
 
@@ -38,8 +38,8 @@
                     <div class="form-group">
                         <label for="text1" class="col-sm-2 control-label"></label>
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-rect btn-success"><i class="fa fa-plus"></i> Tambahkan Kontributor</button>
-                            <a href="#" class="btn btn-rect btn-danger">Batal</a>
+                            <button type="submit" class="btn btn-rect btn-success"><i class="fa fa-save"></i> Simpan Perubahan</button>
+                            <a href="<?= base_url('contributor') ?>" class="btn btn-rect btn-danger">Batal</a>
                         </div>
                     </div>
 
