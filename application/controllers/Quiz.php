@@ -14,11 +14,10 @@ class Quiz extends CI_Controller {
 			'title_page' => 'Kuis'
 		);
 
-		echo 'adit';
-		//$this->load->view('includes/template', $data);
+		$this->load->view('includes/template', $data);
 	}
 
-	public function edit($a){		
+	public function edit(){
 		$data = array(
 			'page' => 'quiz/index.php',
 			'title_page' => 'Kuis'
