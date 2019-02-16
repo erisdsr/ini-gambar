@@ -12,8 +12,8 @@ class Contributor extends CI_Controller {
 	public function index(){
 		$data = array(
 			'page' => 'contributor/index.php',
-            'title_page' => 'Kontributor',
-            'get' => $this->muser->get_where_contributor()->result()
+			'title_page' => 'Kontributor',
+			'get' => $this->muser->get_where_contributor()->result()
 		);
 		echo "Eris";
 		//$this->load->view('includes/template', $data);
@@ -21,8 +21,10 @@ class Contributor extends CI_Controller {
 
 	public function edit($a){		
 		$data = array(
-			'page' => 'quiz/index.php',
-			'title_page' => 'Kontributor'
+			'page' => 'contributor/index.php',
+			'title_page' => 'Kontributor',
+			'get' => $this->muser->get_where_contributor()->result(),
+			'edit' => $this->muser->get_where_id($this->session->id)->row()
 		);
 
 		$this->load->view('includes/template', $data);
@@ -44,5 +46,17 @@ class Contributor extends CI_Controller {
 		}
 		redirect(base_url('contributor'));
 	}
+
+
+	public function delete(){
+		$id = $this->uri->segment(3);
+		if($this->muser->delete($id)){
+			$this->session->set_flashdata('info','Data berhasil dihapus!');
+		} else {
+			$this->session->set_flashdata('danger','Data tidak dapat dihapus!');
+		}
+		redirect(base_url('contributor'));
+	}
+
 	
 }
