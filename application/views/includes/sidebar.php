@@ -27,7 +27,7 @@
 
           <li class="nav-header">MENU ADMINISTRATOR</li>
           <li>
-            <a class="<?= $title_page == 'Dashboard'? 'active' : '' ?>" href="<?= base_url() ?>">
+            <a class="<?= $title_page == 'Dashboard'? 'active' : '' ?>" href="<?= base_url('dashboard') ?>">
               <span class="nav-icon"><i class="fa fa-fw fa-home"></i></span>
               <span class="nav-title">Beranda</span>
             </a>

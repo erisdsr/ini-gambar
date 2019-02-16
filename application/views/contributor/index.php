@@ -16,8 +16,6 @@
   <div class="main-content bg-clouds">
     <div class="container-fluid p-t-15">
 
-      
-
       <?php if($this->session->flashdata('info')){ ?>
 
       <div class="alert alert-success btn-rect alert-dismissible show" role="alert">
