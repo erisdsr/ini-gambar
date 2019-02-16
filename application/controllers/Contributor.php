@@ -15,8 +15,8 @@ class Contributor extends CI_Controller {
 			'title_page' => 'Kontributor',
 			'get' => $this->muser->get_where_contributor()->result()
 		);
-		echo "Eris";
-		//$this->load->view('includes/template', $data);
+		
+		$this->load->view('includes/template', $data);
 	}
 
 	public function edit($a){		

@@ -55,7 +55,7 @@
                 <table data-plugin="datatables" class="table table-striped table-bordered" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>No</th> tulis
+                      <th>No</th>
                       <th>ID</th>
                       <th>Username</th>
                       <th>Aksi</th>
