@@ -17,6 +17,11 @@ class muser extends CI_Model {
 		$query = $this->db->get('user');
 		return $query;
 	}
+ 
+	public function get_where_id($id){
+		$query = $this->db->get_where('user', array('id' => $id));
+		return $query;
+	}
 
 	public function get_where_contributor(){
 		$query = $this->db->query("SELECT * FROM user WHERE level = 1");
@@ -36,8 +41,8 @@ class muser extends CI_Model {
 		return $this->db->update('user');
 	}
 
-	public function delete($username){
-		$query = $this->db->delete('user', array('username' => $username));
+	public function delete($id){
+		$query = $this->db->delete('user', array('id' => $id));
 		return $query;
 	}
 }
