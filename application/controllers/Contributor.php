@@ -21,8 +21,9 @@ class Contributor extends CI_Controller {
 
 	public function edit($a){		
 		$data = array(
-			'page' => 'quiz/index.php',
-			'title_page' => 'Kontributor'
+			'page' => 'contributor/index.php',
+			'title_page' => 'Kontributor',
+			'get' => $this->muser->get_where_contributor()->result()
 		);
 
 		$this->load->view('includes/template', $data);

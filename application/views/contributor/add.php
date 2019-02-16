@@ -5,13 +5,13 @@
                 <h4><i class="fa fa-plus"></i> Tambahkan Kontributor</h4>
             </header>
             <div class="box-body">
-                
+                 
                 <form class="form-horizontal" method="POST" action="<?= base_url('contributor/insert') ?>">
                     
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Username</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="username">
+                            <input type="text" class="form-control" name="username" autocomplete="off">
                         </div>
                     </div>
 

@@ -72,8 +72,8 @@
                       <td><?= $data->id ?></td>
                       <td><?= $data->username ?></td>
                       <td>
-                        <a href="<?= base_url('edit/'.$id) ?>" class="btn btn-rect btn-sm btn-warning"><i class="fa fa-edit"></i> Edit</a>
-                        <a href="<?= base_url() ?>" class="btn btn-rect btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                        <a href="<?= base_url('contributor/edit/'.$data->id) ?>" class="btn btn-rect btn-sm btn-warning"><i class="fa fa-edit"></i> Edit</a>
+                        <a href="<?= base_url('contributor/delete/'.$data->id) ?>" class="btn btn-rect btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
                       </td>
                     </tr>
 

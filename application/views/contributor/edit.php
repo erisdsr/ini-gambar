@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="box">
             <header class="bg-orange">
-                <h4><i class="fa fa-edit"></i> Edit Kuis</h4>
+                <h4><i class="fa fa-edit"></i> Edit Kontributor</h4>
             </header>
             <div class="box-body">
                 
@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Username</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="username">
+                            <input type="text" class="form-control" name="username" autocomplete="off">
                         </div>
                     </div>
 
