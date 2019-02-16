@@ -6,8 +6,10 @@
             </header>
             <div class="box-body">
                 
-                <form class="form-horizontal" action="">
+                <form class="form-horizontal" method="POST" action="<?= base_url('contributor/update/'.$this->uri->segment(3)) ?>">
                     
+                    <input type="hidden" name="id" value="<?= $edit->id ?>">
+
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Username</label>
                         <div class="col-sm-10">
@@ -30,7 +32,7 @@
                         <label class="col-sm-2 control-label">Ulangi Password</label>
                         <div class="col-sm-10">
                             <input type="password" class="form-control" name="ulangi_password">
-                        </div>
+                        </div> 
                     </div>
 
                     <hr class="b-s-dashed">              

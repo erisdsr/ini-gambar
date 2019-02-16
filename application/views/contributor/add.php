@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Username</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="username" autocomplete="off">
+                            <input type="text" class="form-control" name="username" autocomplete="off" required="">
                         </div>
                     </div>
 
@@ -20,7 +20,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Password</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" name="password">
+                            <input type="password" class="form-control" name="password" required="">
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Ulangi Password</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" name="ulangi_password">
+                            <input type="password" class="form-control" name="ulangi_password" required="">
                         </div>
                     </div>
 
