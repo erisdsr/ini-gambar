@@ -7,6 +7,10 @@ class Contributor extends CI_Controller {
         parent::__construct();
         $this->load->model('muser');
 
+				if($this->session->username == null){
+					redirect(base_url('login'));
+				}
+
 	}
 	
 	public function index(){
