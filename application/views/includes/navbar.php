@@ -42,7 +42,7 @@
               <li class="dropdown b-l">
                 <a class="dropdown-toggle profile-pic" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <img class="img-circle" src="<?= base_url('assets/images/user.png') ?>" alt="Administrator">
-                  <b class="hidden-xs hidden-sm">Eris DSR <span class="caret"></span></b>
+                  <b class="hidden-xs hidden-sm"> <?= $this->session->username ?> <span class="caret"></span></b>
                 </a>
                 <ul class="dropdown-menu animated flipInY pull-right">
                   <li>
@@ -50,7 +50,7 @@
                   </li>
                   <li role="separator" class="divider"></li>
                   <li>
-                    <a href="<?= base_url('login') ?>"><i class="fa fa-fw fa-sign-out"></i> Keluar</a>
+                    <a href="<?= base_url('dashboard/logout') ?>"><i class="fa fa-fw fa-sign-out"></i> Keluar</a>
                   </li>
                 </ul>
               </li>

@@ -12,7 +12,7 @@
           </a>
         </div>
         <div class="user-info">
-          <h5>Eris DSR</h5>
+          <h5><?= $this->session->username ?></h5>
               <p class="text-turquoise small dropdown-toggle bg-transparent">
                 <i class="fa fa-fw fa-circle"></i> Online
               </p>

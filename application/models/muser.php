@@ -32,12 +32,31 @@ class muser extends CI_Model {
 		return $this->db->query("SELECT * FROM user WHERE username ='$username' AND password = '$password'");
 	}
 
-	public function update($username, $password){
+	public function change_password($username, $password){
 		$object = array(
 			'password' => $password
 		);
 		$this->db->set($object);
 		$this->db->where('username', $username);
+		return $this->db->update('user');
+	}
+
+	public function update($id, $username){
+		$object = array(
+			'username' => $username
+		);
+		$this->db->set($object);
+		$this->db->where('id', $id);
+		return $this->db->update('user');
+	}
+
+	public function update_all($id, $username, $password){
+		$object = array(
+			'username' => $username,
+			'password' => $password
+		);
+		$this->db->set($object);
+		$this->db->where('id', $id);
 		return $this->db->update('user');
 	}
 
