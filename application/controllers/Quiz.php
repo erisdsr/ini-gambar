@@ -14,7 +14,8 @@ class Quiz extends CI_Controller {
 			'title_page' => 'Kuis'
 		);
 
-		$this->load->view('includes/template', $data);
+		echo 'adit';
+		//$this->load->view('includes/template', $data);
 	}
 
 	public function edit($a){		
