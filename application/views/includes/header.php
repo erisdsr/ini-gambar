@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/vendor/jqvmap/jqvmap.css') ?>">
   <link rel="stylesheet" href="<?= base_url('assets/vendor/dragula/dragula.css') ?>">
   <link rel="stylesheet" href="<?= base_url('assets/vendor/perfect-scrollbar/perfect-scrollbar.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/vendor/lightgallery/css/lightgallery.min.css'); ?>" />
 
   <!-- END: plugin stylesheet files -->
 

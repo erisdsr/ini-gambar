@@ -38,6 +38,7 @@
   <script src="<?= base_url('assets/vendor/datatables/js/jquery.dataTables.js') ?>"></script>
   <script src="<?= base_url('assets/vendor/datatables/js/dataTables.bootstrap.js') ?>"></script>
   <script src="<?= base_url('assets/js/my-app.js') ?>"></script>
+        <script src="<?php echo base_url('assets/vendor/lightgallery/js/lightgallery-all.min.js'); ?>"></script>
   <!-- END: plugin javascript files -->
 
   <!-- Demo javascript files. NOT REQUIRED -->
