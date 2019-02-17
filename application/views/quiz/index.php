@@ -16,6 +16,26 @@
   <div class="main-content bg-clouds">
     <div class="container-fluid p-t-15">
 
+        <?php if($this->session->flashdata('info')){ ?>
+
+            <div class="alert alert-success btn-rect alert-dismissible show" role="alert">
+                <?= $this->session->flashdata('info'); ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        <?php } if($this->session->flashdata('danger')){ ?>
+
+            <div class="alert alert-danger btn-rect alert-dismissible show" role="alert">
+                <?= $this->session->flashdata('danger'); ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        <?php } ?>
+
         <div class="row">
             <div class="col-sm-12">
                 <div class="box">
@@ -71,13 +91,13 @@
                     <div class="row" data-plugin="lightgallery" data-selector=".thumbnail" data-thumbnail=true>
                         <?php foreach ($quiz_data as $quiz): ?>
                             <div class="col-sm-6 col-md-3">
-                                <div class="thumbnail" style="border-radius: 0; margin-bottom: 0;" data-src="<?php echo base_url('soal/').$quiz->image; ?>" data-sub-html="<h4><?php echo strtoupper($quiz->answer); ?></h4>">
-                                    <img src="<?php echo base_url('soal/').$quiz->image; ?>" alt="<?php echo strtoupper($quiz->answer); ?>" data-toggle="tooltip" title="click for show">
+                                <div class="thumbnail" style="border-radius: 0; margin-bottom: 0;" data-src="http://inigambar.tepuntal.com/images/<?php echo $quiz->image; ?>" data-sub-html="<h4><?php echo strtoupper($quiz->answer); ?></h4>">
+                                    <img src="http://inigambar.tepuntal.com/images/<?php echo $quiz->image; ?>" alt="<?php echo strtoupper($quiz->answer); ?>" data-toggle="tooltip" title="click for show">
                                     <div class="caption text-center">
                                         <h4><?php echo strtoupper($quiz->answer); ?></h4>
                                     </div>
                                 </div>
-                                <a href="<?php echo base_url('quiz/delete/').$quiz->image; ?>">
+                                <a onclick="return confirm('Yakin menghapus kuis ini?')" href="<?php echo base_url('quiz/delete/').$quiz->image; ?>">
                                     <button style="border-radius: 0" class="btn btn-block btn-danger"><i class="fa fa-trash"></i> HAPUS KUIS</button>
                                 </a>
                             </div>

@@ -40,8 +40,7 @@
       <div class="text-center box shadow-20 animated fadeInLeft b-r-4 p-a-20">
 
         <img src="<?= base_url('assets/images/1.png') ?>" style="height:200px; width: 230px; margin:3% 25%">
-
-        <h1>TEBAK INI</h1>
+          
         <h5>Halaman Login Kontributor</h5><br>
 
         <?php if($this->session->flashdata('info')){ ?>
