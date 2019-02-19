@@ -11,6 +11,13 @@ class Contributor extends CI_Controller {
 					redirect(base_url('login'));
 				}
 
+				if($this->session->level != 0){
+					echo "<script>
+						alert('Anda tidak mempunyai akses kehalaman ini!');
+						location='". base_url('dashboard') ."'
+						</script>";
+				}
+
 	}
 	
 	public function index(){

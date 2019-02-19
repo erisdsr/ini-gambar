@@ -40,12 +40,16 @@
             </a>
           </li>
 
+          <?php if($this->session->level == 0){ ?>
+
           <li>
             <a class="<?= $title_page == 'Kontributor'? 'active' : '' ?>" href="<?= base_url('contributor') ?>">
               <span class="nav-icon"><i class="fa fa-fw fa-user"></i></span>
               <span class="nav-title">Kontributor</span>
             </a>
           </li>
+
+          <?php } ?>
 
         </ul>
         <!-- END: nav-content -->
