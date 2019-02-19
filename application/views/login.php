@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title><?= $title_page ?></title>
-  <link rel="icon" href="<?= base_url('assets/images/favicon1.png') ?>">
+  <link rel="icon" href="<?= base_url('assets/images/1.png') ?>">
   <!-- Core stylesheet files. REQUIRED -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.css') ?>">

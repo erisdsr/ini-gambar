@@ -8,7 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title><?= $title_page ?></title>
 
-  <link rel="icon" href="<?= base_url('assets/images/favicon1.png') ?>">
+  <link rel="icon" href="<?= base_url('assets/images/1.png') ?>">
 
   <!-- Vendor stylesheet files. REQUIRED -->
   <!-- BEGIN: Vendor  -->
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/vendor/jqvmap/jqvmap.css') ?>">
   <link rel="stylesheet" href="<?= base_url('assets/vendor/dragula/dragula.css') ?>">
   <link rel="stylesheet" href="<?= base_url('assets/vendor/perfect-scrollbar/perfect-scrollbar.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/vendor/lightgallery/css/lightgallery.min.css'); ?>" />
+  <link rel="stylesheet" href="<?= base_url('assets/vendor/lightgallery/css/lightgallery.min.css'); ?>" />
 
   <!-- END: plugin stylesheet files -->
 
