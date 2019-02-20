@@ -75,9 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'tepuntal.cuqky40yqd8a.ap-southeast-1.rds.amazonaws.com',
-	'username' => 'inigambar',
-	'password' => 'qwe',
+	//'hostname' => 'tepuntal.cuqky40yqd8a.ap-southeast-1.rds.amazonaws.com',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
 	'database' => 'inigambar',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

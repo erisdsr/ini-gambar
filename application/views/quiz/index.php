@@ -90,7 +90,7 @@
                 <div class="container-fluid p-t-15">
                     <div class="row" data-plugin="lightgallery" data-selector=".thumbnail" data-thumbnail=true>
                         <?php foreach ($quiz_data as $quiz): ?>
-                            <div class="col-sm-6 col-md-3">
+                            <div class="col-sm-6 col-md-3" style="margin-bottom: 20px">
                                 <div class="thumbnail" style="border-radius: 0; margin-bottom: 0;" data-src="http://inigambar.tepuntal.com/images/<?php echo $quiz->image; ?>" data-sub-html="<h4><?php echo strtoupper($quiz->answer); ?></h4>">
                                     <img src="http://inigambar.tepuntal.com/images/<?php echo $quiz->image; ?>" alt="<?php echo strtoupper($quiz->answer); ?>" data-toggle="tooltip" title="click for show">
                                     <div class="caption text-center">
