@@ -15,15 +15,15 @@ class Api_model extends CI_Model {
     }
 
     public function get_high_score() {
-        return $this->db->order_by('score', 'desc')->get('player', 10)->result();
+        return $this->db->query('SELECT * FROM player ORDER BY score DESC, time ASC LIMIT 10')->result();
     }
 
-    public function add_high_score($name, $score) {
+    public function add_high_score($name, $score, $time) {
         $data = array(
             'id' => time(),
             'name' => $name,
             'score' => $score,
-            'time' => 0
+            'time' => $time
         );
         return $this->db->insert('player', $data);
     }

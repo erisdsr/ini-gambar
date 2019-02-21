@@ -32,7 +32,7 @@ class Api extends CI_Controller {
         echo json_encode($this->api_model->get_high_score());
     }
 
-    public function add_high_score($name, $score) {
-        echo json_encode($this->api_model->add_high_score(urldecode($name), $score));
+    public function add_high_score($name, $score, $time) {
+        echo json_encode($this->api_model->add_high_score(urldecode($name), $score, $time));
     }
 }
